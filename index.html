@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamizhan Bakery — 100 Years of Baking Traditions, Chennai</title>
+<meta name="description" content="Premium handcrafted cakes, custom celebration orders, and 2-hour express delivery across Chennai. Cash on Delivery available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#page-home" class="skip-link">Skip to content</a>
+
+<!-- ============================================================ NOTICE BAR -->
+<div class="notice-bar">⚡ 2-Hour Express Delivery Across Chennai&nbsp; | &nbsp;Cash on Delivery Available</div>
+
+<!-- ============================================================ HEADER -->
+<header class="site">
+  <div class="nav-row wrap">
+    <a href="#home" data-route="home" class="brand" aria-label="Tamizhan Bakery home">
+      <span class="brand-mark">TB</span>
+      <span class="brand-text">
+        <span class="name">Tamizhan Bakery</span><br>
+        <span class="tag">100 Years of Baking Traditions</span>
+      </span>
+    </a>
+
+    <nav class="links" aria-label="Primary">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#catalog" data-route="catalog">Cakes</a>
+      <a href="#customize" data-route="customize">Customise</a>
+      <a href="#addons" data-route="addons">Celebration Store</a>
+      <a href="#about" data-route="about">About Us</a>
+      <a href="#track" data-route="track">Track Order</a>
+    </nav>
+
+    <div class="search-box">
+      <span>🔍</span>
+      <input id="global-search" type="search" placeholder="Search cakes…" aria-label="Search cakes">
+    </div>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="track-quick" data-route="track" aria-label="Track order">📦</button>
+      <button class="icon-btn" id="cart-toggle" aria-label="Open cart">
+        🛒<span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="mobile-drawer" id="mobile-drawer">
+  <div class="panel">
+    <button class="close" id="drawer-close" aria-label="Close menu">✕</button>
+    <nav>
+      <a href="#home" data-route="home">Home</a>
+      <a href="#catalog" data-route="catalog">Cakes</a>
+      <a href="#customize" data-route="customize">Customise</a>
+      <a href="#addons" data-route="addons">Celebration Store</a>
+      <a href="#about" data-route="about">About Us</a>
+      <a href="#track" data-route="track">Track Order</a>
+    </nav>
+    <a class="btn btn-primary" href="#catalog" data-route="catalog">Order in 2 Hours</a>
+  </div>
+</div>
+
+<main id="page-home-anchor">
+
+<!-- ============================================================ PAGE: HOME -->
+<section class="page" id="page-home">
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Chennai · Est. 1926</span>
+        <h1>A century of icing sugar &amp; <em>Madras</em> mornings.</h1>
+        <p class="lead">Handcrafted cakes baked the way our founders did in 1926 — now on your doorstep in under 2 hours, anywhere in Chennai.</p>
+        <div class="hero-ctas">
+          <a href="#catalog" data-route="catalog" class="btn btn-primary">Order in 2 Hours</a>
+          <a href="#customize" data-route="customize" class="btn btn-ghost">Design a Custom Cake</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>100+</b><span>Years Legacy</span></div>
+          <div><b>4.9★</b><span>Customer Rating</span></div>
+          <div><b>2 Hrs</b><span>Express Delivery</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-badge b1"><span class="dot"></span> 2-Hour Delivery Live</div>
+        <div class="cake-stage">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=900&q=80" alt="Signature chocolate truffle cake" style="opacity:1;">
+          <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=900&q=80" alt="Heritage filter coffee cake" style="opacity:0;position:absolute;inset:0;">
+          <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=900&q=80" alt="Custom celebration cake" style="opacity:0;position:absolute;inset:0;">
+          <div class="stage-dots"><span class="active"></span><span></span><span></span></div>
+        </div>
+        <div class="floating-badge b2">🎂 100% Freshly Baked Daily</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="badges">
+    <div class="wrap">
+      <div class="badge-item"><span class="n">100</span> Years Legacy</div>
+      <div class="badge-item"><span class="n">✓</span> 100% Freshly Baked</div>
+      <div class="badge-item"><span class="n">2h</span> Express Delivery</div>
+      <div class="badge-item"><span class="n">4.9★</span> Customer Rating</div>
+    </div>
+  </section>
+
+  <section class="block wrap">
+    <div class="block-head">
+      <div><span class="eyebrow">Bestsellers</span><h2>Loved across Chennai</h2></div>
+      <a href="#catalog" data-route="catalog" class="btn btn-ghost btn-sm">View Full Catalog</a>
+    </div>
+    <div class="grid" id="home-bestseller-grid"></div>
+  </section>
+
+  <section class="block wrap">
+    <div class="block-head">
+      <div><span class="eyebrow">Categories</span><h2>Shop by occasion</h2></div>
+    </div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr));">
+      <a href="#catalog" data-route="catalog" class="card" style="text-decoration:none;">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Chocolate cakes"></div>
+        <div class="body"><h4>Chocolate Cakes</h4><p class="desc">Belgian dark, truffle, hazelnut &amp; more.</p></div>
+      </a>
+      <a href="#catalog" data-route="catalog" class="card" style="text-decoration:none;">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=500&q=80" alt="Birthday specials"></div>
+        <div class="body"><h4>Birthday Specials</h4><p class="desc">Character, number &amp; funfetti cakes.</p></div>
+      </a>
+      <a href="#catalog" data-route="catalog" class="card" style="text-decoration:none;">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=500&q=80" alt="Heritage bakes"></div>
+        <div class="body"><h4>100-Year Heritage Bakes</h4><p class="desc">Our original 1926 recipes.</p></div>
+      </a>
+      <a href="#addons" data-route="addons" class="card" style="text-decoration:none;">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500&q=80" alt="Celebration add-ons"></div>
+        <div class="body"><h4>Celebration Add-ons</h4><p class="desc">Candles, toppers, balloons &amp; more.</p></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="block wrap">
+    <div class="block-head"><div><span class="eyebrow">Design your own</span><h2>Build a custom cake in 3 steps</h2></div></div>
+    <div class="customizer">
+      <div class="step-list">
+        <div class="step"><div class="num">1</div><div><h5>Choose your base</h5><p>Pick a flavour — chocolate, vanilla, red velvet, jaggery and more.</p></div></div>
+        <div class="step"><div class="num">2</div><div><h5>Select weight &amp; shape</h5><p>0.5 kg to 2 kg+, round, heart, square or tiered.</p></div></div>
+        <div class="step"><div class="num">3</div><div><h5>Add your message</h5><p>Upload a reference photo and tell us what to write.</p></div></div>
+      </div>
+      <div style="text-align:center;">
+        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=500&q=80" alt="Custom cake design preview" style="border-radius:20px;box-shadow:var(--shadow-card);margin-bottom:20px;">
+        <a href="#customize" data-route="customize" class="btn btn-primary">Start Designing</a>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============================================================ PAGE: CATALOG -->
+<section class="page" id="page-catalog">
+  <section class="block wrap">
+    <div class="block-head">
+      <div><span class="eyebrow">Full Catalog</span><h2>Cakes for every celebration</h2></div>
+    </div>
+    <div class="chip-row" id="chip-row" role="group" aria-label="Filter by category">
+      <button class="chip active" data-cat="bestseller">Bestsellers</button>
+      <button class="chip" data-cat="chocolate">Chocolate</button>
+      <button class="chip" data-cat="fruit">Fruit &amp; Exotic</button>
+      <button class="chip" data-cat="heritage">Traditional Heritage</button>
+      <button class="chip" data-cat="cheesecake">Cheesecakes</button>
+      <button class="chip" data-cat="tresleches">Tres Leches</button>
+      <button class="chip" data-cat="kids">Kids' Birthday</button>
+      <button class="chip" data-cat="all">All</button>
+    </div>
+    <div class="grid" id="catalog-grid"></div>
+  </section>
+</section>
+
+<!-- ============================================================ PAGE: CUSTOMIZE -->
+<section class="page" id="page-customize">
+  <section class="block wrap" style="max-width:820px;">
+    <span class="eyebrow">Made for you</span>
+    <h2>Design your custom cake</h2>
+    <p>Upload a reference photo, choose your flavour and shape, and we'll craft it fresh for your celebration.</p>
+
+    <div class="field">
+      <label for="ref-upload">Reference photo (optional)</label>
+      <input type="file" id="ref-upload" accept="image/*">
+      <div id="ref-preview"></div>
+    </div>
+
+    <div class="two-col">
+      <div class="field">
+        <label for="c-flavor">Flavour</label>
+        <select id="c-flavor">
+          <option>Chocolate</option><option>Vanilla</option><option>Red Velvet</option>
+          <option>Butterscotch</option><option>Jaggery Karupatti</option><option>Fruit &amp; Cream</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="c-shape">Shape</label>
+        <select id="c-shape">
+          <option>Round</option><option>Heart</option><option>Square</option><option>Tiered</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="c-weight">Weight</label>
+        <select id="c-weight">
+          <option value="0.5kg">0.5 kg</option><option value="1kg">1 kg</option><option value="2kg">2 kg+</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="c-theme">Theme / message for the baker</label>
+        <input id="c-theme" type="text" placeholder="e.g. Pastel floral, 'Happy 25th Anniversary'">
+      </div>
+    </div>
+    <button class="btn btn-primary" id="add-custom-btn">Add Custom Cake to Cart</button>
+    <p style="font-size:12.5px;margin-top:14px;">Custom cakes need at least 6 hours' lead time (24 hours for elaborate tiered/fondant designs). You'll choose your exact delivery slot at checkout.</p>
+  </section>
+</section>
+
+<!-- ============================================================ PAGE: ADDONS -->
+<section class="page" id="page-addons">
+  <section class="block wrap">
+    <div class="block-head">
+      <div><span class="eyebrow">Celebration Store</span><h2>Finish the celebration</h2></div>
+    </div>
+    <div class="grid" id="addon-grid"></div>
+  </section>
+</section>
+
+<!-- ============================================================ PAGE: ABOUT -->
+<section class="page" id="page-about">
+  <section class="block wrap" style="max-width:760px;">
+    <span class="eyebrow">Since 1926</span>
+    <h2>A hundred years, one oven at a time</h2>
+    <p>Tamizhan Bakery began as a single family-run oven in the lanes of old Madras. Four generations later, we still bake with the same jaggery-and-butter instincts — just with a faster delivery bike.</p>
+    <div class="timeline">
+      <div class="tl-item"><span class="yr">1926</span><h4>A single oven in Georgetown</h4><p>Our founders started baking bread and rusks for the neighbourhood, using recipes carried over from home kitchens.</p></div>
+      <div class="tl-item"><span class="yr">1958</span><h4>The first celebration cake</h4><p>Tamizhan Bakery baked its first fresh cream birthday cake — the Pineapple Fresh Cream recipe we still sell today.</p></div>
+      <div class="tl-item"><span class="yr">1991</span><h4>Hygiene-first kitchens</h4><p>We modernised our kitchens with standardised hygiene protocols, without changing a single family recipe.</p></div>
+      <div class="tl-item"><span class="yr">2016</span><h4>Chennai-wide delivery</h4><p>We expanded from our Georgetown storefront to serve every zone across Chennai.</p></div>
+      <div class="tl-item"><span class="yr">2024</span><h4>2-Hour Express Delivery</h4><p>A dedicated fleet now gets a fresh cake to your door in under two hours, anywhere in the city.</p></div>
+    </div>
+  </section>
+</section>
+
+<!-- ============================================================ PAGE: TRACK ORDER -->
+<section class="page" id="page-track">
+  <section class="block wrap track-shell">
+    <span class="eyebrow">Live Tracking</span>
+    <h2>Track your order</h2>
+    <p>Enter your Order ID (e.g. TB-CH-1024) or the phone number used at checkout.</p>
+    <div style="display:flex;gap:10px;">
+      <div class="field" style="flex:1;margin-bottom:0;">
+        <input id="track-input" type="text" placeholder="TB-CH-1024 or 98XXXXXXXX">
+      </div>
+      <button class="btn btn-primary" id="track-btn">Track</button>
+    </div>
+    <div id="track-result"></div>
+  </section>
+</section>
+
+</main>
+
+<!-- ============================================================ FOOTER -->
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="brand" style="margin-bottom:14px;">
+        <span class="brand-mark">TB</span>
+        <span class="brand-text"><span class="name" style="color:var(--pearl);">Tamizhan Bakery</span></span>
+      </div>
+      <p>Premium handcrafted cakes &amp; custom celebration orders, delivered fresh across Chennai in 2 hours.</p>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <div class="foot-links">
+        <a href="#catalog" data-route="catalog">Cakes Catalog</a>
+        <a href="#customize" data-route="customize">Customise a Cake</a>
+        <a href="#addons" data-route="addons">Celebration Store</a>
+        <a href="#about" data-route="about">About Us</a>
+      </div>
+    </div>
+    <div>
+      <h5>Support</h5>
+      <div class="foot-links">
+        <a href="#track" data-route="track">Track Order</a>
+        <a href="#" id="foot-wa">WhatsApp Us</a>
+        <a href="#" id="foot-call">Call the Bakery</a>
+      </div>
+    </div>
+    <div>
+      <h5>Visit</h5>
+      <p>Georgetown, Chennai — 600001<br>Open daily, 8 AM – 10 PM</p>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Tamizhan Bakery. All rights reserved.</span>
+    <span>Cash on Delivery · Serving all of Chennai</span>
+  </div>
+</footer>
+
+<!-- ============================================================ CART DRAWER -->
+<div class="overlay-dim" id="overlay-dim"></div>
+<aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
+  <div class="cart-head">
+    <h3 style="margin:0;">Your Cart</h3>
+    <button id="cart-close" aria-label="Close cart" style="background:none;border:none;font-size:20px;">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-foot">
+    <div class="cart-total-row"><span>Total</span><span id="cart-total">₹0</span></div>
+    <button class="btn btn-primary" id="checkout-btn" disabled>Proceed to Checkout</button>
+  </div>
+</aside>
+
+<!-- ============================================================ CHECKOUT MODAL -->
+<div class="modal-back" id="checkout-modal">
+  <div class="modal">
+    <button class="close" id="checkout-close" aria-label="Close checkout">✕</button>
+    <span class="eyebrow">Checkout</span>
+    <h3>Delivery details</h3>
+    <div id="checkout-summary" style="margin-bottom:18px;display:flex;flex-direction:column;gap:10px;"></div>
+    <form id="checkout-form">
+      <div class="two-col">
+        <div class="field">
+          <label for="f-name">Full name</label>
+          <input id="f-name" type="text" required>
+          <span class="err">Please enter your full name.</span>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone number</label>
+          <input id="f-phone" type="tel" maxlength="10" placeholder="98XXXXXXXX" required>
+          <span class="err">Enter a valid 10-digit Indian phone number.</span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-address">Street address / door no.</label>
+        <input id="f-address" type="text" required>
+        <span class="err">Please enter your delivery address.</span>
+      </div>
+      <div class="two-col">
+        <div class="field">
+          <label for="f-city">City</label>
+          <input id="f-city" type="text" value="Chennai" disabled>
+        </div>
+        <div class="field">
+          <label for="f-pincode">Pincode</label>
+          <input id="f-pincode" type="text" maxlength="6" placeholder="600001" required>
+          <span class="err">Enter a valid 6-digit pincode.</span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-landmark">Landmark (optional)</label>
+        <input id="f-landmark" type="text">
+      </div>
+      <div class="field">
+        <label for="f-message">Message on cake (max 40 characters)</label>
+        <input id="f-message" type="text" maxlength="40" placeholder="Happy Birthday Priya!">
+      </div>
+      <div class="two-col">
+        <div class="field">
+          <label for="f-date">Delivery date</label>
+          <input id="f-date" type="date" required>
+          <span class="err">Please choose a delivery date.</span>
+        </div>
+        <div class="field">
+          <label for="f-slot">Time slot</label>
+          <select id="f-slot" required>
+            <option value="">Select AM / PM</option>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          <span class="err">Please choose AM or PM.</span>
+        </div>
+      </div>
+      <div class="locked-note">🔒 Payment Mode: Cash on Delivery</div>
+      <div class="cart-total-row" style="margin:16px 0;"><span>Total Payable</span><span id="checkout-total">₹0</span></div>
+      <button class="btn btn-primary" style="width:100%;" id="place-order-btn" type="submit">Place Order</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============================================================ CONFIRMATION MODAL -->
+<div class="modal-back" id="confirm-modal">
+  <div class="modal confirm-box">
+    <button class="close" id="confirm-close" aria-label="Close">✕</button>
+    <div class="wax-seal">BAKED<br>SINCE<br>1926</div>
+    <h3>Order placed!</h3>
+    <p>Your cake is being prepared with care.</p>
+    <div class="order-id" id="confirm-order-id">TB-CH-0000</div>
+    <p style="font-size:14px;">Total: <b id="confirm-total">₹0</b> · Cash on Delivery<br>Slot: <b id="confirm-slot">—</b></p>
+    <div style="display:flex;gap:12px;justify-content:center;margin-top:18px;flex-wrap:wrap;">
+      <button class="btn btn-primary" id="confirm-track-link">Track this Order</button>
+      <button class="btn btn-ghost" data-wa-order>Chat on WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ AI CHAT + WHATSAPP FAB -->
+<div class="chat-fab">
+  <div class="chat-panel" id="chat-panel">
+    <div class="chat-head">
+      <span class="t">🎂 Cake Assistant</span>
+      <button id="chat-close" style="background:none;border:none;color:var(--pearl);font-size:18px;" aria-label="Close chat">✕</button>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="msg bot">Vanakkam! I'm the Tamizhan Bakery Cake Assistant. Ask me about delivery areas, eggless options, custom lead times, or your order status.</div>
+    </div>
+    <div class="chat-suggest">
+      <button data-suggest>Delivery areas?</button>
+      <button data-suggest>Eggless options?</button>
+      <button data-suggest>Custom cake lead time?</button>
+    </div>
+    <div class="chat-input-row">
+      <input id="chat-input" type="text" placeholder="Ask about cakes, delivery…">
+      <button id="chat-send" aria-label="Send">➤</button>
+    </div>
+  </div>
+  <button class="fab-btn" id="chat-fab" aria-label="Open cake assistant">💬</button>
+  <button class="fab-btn wa" id="wa-fab" aria-label="Chat on WhatsApp">🟢</button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.getElementById("foot-wa").addEventListener("click", e=>{e.preventDefault(); openWhatsApp();});
+  document.getElementById("foot-call").addEventListener("click", e=>{e.preventDefault(); window.location.href="tel:+9144XXXXXXX";});
+</script>
+</body>
+</html>
